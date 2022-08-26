@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+        <title>Pearl of the Indian Ocean</title>
+        <link rel="icon" type="image/png" href="1.png">
+        <link rel="stylesheet"  href="css\mirissa.css">
+       
+        
+    </head>
+    <body>
+
+    <!--header and navigation bar-->
+    <header id="header">
+            <nav id="navbar">
+                <p id="tlogo">THE PEARL</p>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Tour.html">Tour</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a style="color: rgb(255, 8, 41); font-weight: bold;" href="Explore.html">Travel with Covid</a></li>
+                    <div id="cursor"></div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Header is end-->
+    <p id="welcome">Explore our pearl of the Indian Ocean</p>
+    
+        <a class="scrolli" href="#mainanchor">
+        <img src="images\1234.png"  width="45" height="45">
+        </a>
+    <!--parralax-->
+    <a id="mainanchor"></a>
+    <section>
+        <img src="images\mirissaba.png" id="Backgorund1" width="100%">
+       
+        <p id="topic">Mirissa</p>
+        
+        <img src="images\mirissaaa1.png" id="Backgorund3" width="100%">
+
+    </section>
+    <div id="screen">
+        <h class="text1">Mirissa</h>
+        <p class="text2">Mirissa is a small town on the south<br> coast of Sri Lanka</p>
+        <div class="wrap">
+            <div  class="search">
+               <input type="text" class="searchfunc" placeholder="Explore Sri Lanka">
+               
+               <button type="submit" class="searchB">
+                 <i class="fa fa-search"></i>
+                 <img id="searchi" src="E:\Mini Project\images\search1.png" width="20px" height="20px">
+              </button>
+            </div>
+         </div>
+         <a href="https://www.google.com/maps/place/Mirissa/@5.9515825,80.455327,15z/data=!3m1!4b1!4m5!3m4!1s0x3ae13fce3177dc59:0xa2d8a78b36dc9c90!8m2!3d5.948262!4d80.4715866">
+            <button href="#screen2" class="b123" >
+                Get Direction   &rarr;
+            </button>
+         </a>
+
+            <div>
+                <img src="">
+            </div>
+                <a href="Mirissa.html">
+                <div class="location" >
+                
+                <img src="images\galle.jpg" width="230px" height="280px">
+                <P>Galle</P>
+                </div>
+            </a>
+                <a href="#screen2">
+                <div class="location2" >
+                
+                    <img src="images\hummanaya.jpg" width="230px" height="280px">
+                    <P>Hummanaya</P>
+                </div>
+                 </a>
+                 <a href="#screen2"></a>
+                <div class="location3" >
+                
+                    <img src="images\hikka.jpg" width="230px" height="280px">
+                    <P>Hikkaduwa</P>
+                </div>
+            </a>
+           
+       
+    </div>
+
+    <div id="footer">
+        <p id="tlogo2">THE PEARL</p>
+        <p id=""></p>
+        <a href="Tour.html">
+        <button class="b2">
+            Tour Guide
+        </button>
+        </a>
+        <a href="Tour.html">
+        <button class="b3">
+            Covid-19 Updates
+        </button>
+        </a>
+
+        <p id="title001">Locations</p>
+        <p id="copyrighttext">© 2021 All Rights Reserved by The Pearl | Design and Developed By Mithila Welikala | s92066125</p>
+        
+        <ul id="menu1">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="About.html">Tour</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+
+        <ul id="menu2">
+            <li><a href="index.html">Facebook</a></li>
+            <li><a href="destinations.html">Instagram</a></li>
+            <li><a href="About.html">Twitter</a></li>
+
+    </div>
+
+
+
+
+
+
+    <script>
+        let welcome = document.getElementById('welcome');
+        let scrolli = document.getElementById('scrolli');
+        let Backgorund1 = document.getElementById('Backgorund1');
+        let Backgorund2 = document.getElementById('Backgorund2');
+        let Backgorund3 = document.getElementById('Backgorund3');
+        let topic = document.getElementById('topic');
+        let topic2 = document.getElementById('topic2');
+
+        window.addEventListener('scroll' ,function(){
+            let value = window.scrollY;
+            Backgorund1.style.top = value * 0.03 + 'px';
+            Backgorund2.style.top = value * 0.5 + 'px';
+            Backgorund3.style.top = value * 0.2 + 'px';
+            
+
+        })
+    </script>
+
+    
+   
+    <script>
+	
+	var cursor = document.getElementById('cursor')
+	document.addEventListener('mousemove',function(event){
+		var x = event.clientX;
+		var y = event.clientY;
+		cursor.style.left = x + "px"
+		cursor.style.top = y + "px"
+
+	})
+    </script>
+    <script>
+    var header = document.getElementById("header");
+    var menu = document.getElementById("menu");
+    var tlogo = document.getElementById("tlogo");
+    var imgb = document.getElementById("imgb");
+    var img1 = document.getElementById("img1");
+    var img2 = document.getElementById("img2");
+   
+
+    window.onscroll = function(){
+        if(window.pageYOffset >= menu.offsetTop){
+            header.classList.add("sticky");
+            tlogo.classList.add("sticky");
+            menu.classList.add("sticky");
+            imgb.classList.add("imgb");
+            img1.classList.add("img1");
+            img1.classList.add("img1");
+            
+        }
+        else{
+            header.classList.remove("sticky");
+            tlogo.classList.remove("sticky");
+            menu.classList.remove("sticky");
+            imgb.classList.remove("imgb");
+            img1.classList.remove("img1");
+            img2.classList.remove("img2");
+        }
+    }
+    </script>  
+    </body>
+</html>

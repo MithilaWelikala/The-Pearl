@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+        <title>About | Pearl of the Indian Ocean</title>
+        <link rel="icon" type="image/png" href="1.png">
+        <link rel="stylesheet"  href="css\covid.css">
+        <script src="scripts\aaa"></script>
+        
+    </head>
+    <body>
+
+    <!--header and navigation bar-->
+    <header id="header">
+            <nav id="navbar">
+                <p id="tlogo">THE PEARL</p>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Tour.html">Tour</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a style="color: rgb(255, 8, 41); font-weight: bold;" href="covid.html">Travel with Covid</a></li>
+                    <div id="cursor"></div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Header is end-->
+
+    <div id="screen">
+        <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+        <lord-icon
+        src="https://cdn.lordicon.com/yalwfksd.json"
+        trigger="loop"
+        colors="primary:#121331,secondary:#30e849"
+        style="width:250px;height:250px;position: absolute; top: 2%; left: 3%;">
+        </lord-icon>
+        <h class="text1">COVID-19 Health<br> Information</h>
+        
+        
+
+            <div>
+                <img src="">
+            </div>
+            
+                <div class="location" >
+                    <p class="text2">Common travel Information<br> about COVID-19</p>
+
+                    <a href="https://www.hpb.health.gov.lk/si">
+                        <button  class="b7">
+                            Covid-19 Updates  &rarr;
+                        </button>
+
+                        <img id="covidimage" src="images/Temperature Measurement.gif" width="250px" height="250px">
+                    </a>
+                </div>
+               
+       
+    </div>
+
+
+    <div id="screen2">
+
+
+           
+
+            <h1>For Vaccinated<br> Travelers</h1>
+            <p>Fully vaccinated travelers will be released from the airport and do not needs to do Day 01 PC test or undergo quarantine after arrive in Sri Lanka. Travelers, who have not fully vaccinated need to do Day 01 PCR test and they should undergo 14 days mandatory quarantine at a safe and secure certified Level 01 hotel.</p>
+  
+           
+
+            <h3>Travel Guide</h3>
+            <div><p>Travel with Covid</p></div>
+            <p class="p4">Due to a prevalence of COVID-19 cases in the community, there is a high risk of changes to flights and airport operations at short notice. Lockdowns could be imposed in affected areas, and travel restrictions may also be imposed at short notice.
+
+                If you’re planning travel to Sri Lanka, find out what you need to know about coronavirus there in the Coronavirus section.
+                
+                During the COVID-19 pandemic, it is more important than ever to get travel insurance and check it provides sufficient cover. See the FCDO’s guidance on foreign travel insurance.
+                
+                For information about COVID-19 vaccines, see the Coronavirus page.
+
+                The island was divided into numerous kingdoms over the following centuries, intermittently (between CE 993–1077) united under Chola rule. Sri Lanka was ruled by 181 monarchs from the Anuradhapura to Kandy periods.From the 16th century, some coastal areas of the country were also controlled by the Portuguese, Dutch and British. Between 1597 and 1658, a substantial part of the island was under Portuguese rule. The Portuguese lost their possessions in Ceylon due to Dutch intervention in the Eighty Years' War. Following the Kandyan Wars, the island was united under British rule in 1815. Armed uprisings against the British took place in the 1818 Uva Rebellion and the 1848 Matale Rebellion. Independence was finally granted in 1948 but the country remained a Dominion of the British Empire until 1972.<p>
+
+
+            
+    </div>
+
+
+    
+
+
+    <div id="footer">
+        <p id="tlogo2">THE PEARL</p>
+        <p id=""></p>
+        <a href="Tour.html">
+        <button class="b2">
+            Tour Guide
+        </button>
+        </a>
+        <a href="Tour.html">
+        <button class="b3">
+            Covid-19 Updates
+        </button>
+        </a>
+
+        <p id="title001">Locations</p>
+        <p id="copyrighttext">© 2021 All Rights Reserved by The Pearl | Design and Developed By Mithila Welikala | s92066125</p>
+        
+        <ul id="menu1">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="About.html">Tour</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+
+        <ul id="menu2">
+            <li><a href="index.html">Facebook</a></li>
+            <li><a href="destinations.html">Instagram</a></li>
+            <li><a href="About.html">Twitter</a></li>
+
+    </div>
+
+    <script>
+	
+        var cursor = document.getElementById('cursor')
+        document.addEventListener('mousemove',function(event){
+            var x = event.clientX;
+            var y = event.clientY;
+            cursor.style.left = x + "px"
+            cursor.style.top = y + "px"
+    
+        })
+        </script>
+    <script>
+        var header = document.getElementById("header");
+        var menu = document.getElementById("menu");
+        var tlogo = document.getElementById("tlogo");
+        var imgb = document.getElementById("imgb");
+        var img1 = document.getElementById("img1");
+        var img2 = document.getElementById("img2");
+       
+    
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                header.classList.add("sticky");
+                tlogo.classList.add("sticky");
+                menu.classList.add("sticky");
+                imgb.classList.add("imgb");
+                img1.classList.add("img1");
+                img1.classList.add("img1");
+                
+            }
+            else{
+                header.classList.remove("sticky");
+                tlogo.classList.remove("sticky");
+                menu.classList.remove("sticky");
+                imgb.classList.remove("imgb");
+                img1.classList.remove("img1");
+                img2.classList.remove("img2");
+            }
+        }
+        </script>  
+
+    </body>
+</html>
